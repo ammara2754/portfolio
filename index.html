@@ -5,100 +5,75 @@
   <title>Ammara Fiayyaz | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin:0; padding:0; box-sizing:border-box; }
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: #f4f6fb;
-      color: #1f2933;
+      background: #f1f5f9;
+      color: #1e293b;
       line-height: 1.7;
     }
 
     header {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
+      background: linear-gradient(135deg, #1e293b, #0f172a);
       color: white;
-      padding: 70px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
 
-    header h1 {
-      font-size: 42px;
-      font-weight: 700;
-    }
-
-    header p {
-      margin-top: 12px;
-      font-size: 18px;
-      opacity: 0.9;
-    }
+    header h1 { font-size: 38px; }
+    header p { margin-top: 8px; font-size: 18px; opacity: 0.9; }
 
     nav {
-      background: #111827;
-      padding: 14px;
+      background: #020617;
+      padding: 12px;
       text-align: center;
       position: sticky;
       top: 0;
-      z-index: 10;
     }
 
     nav a {
-      color: #d1d5db;
-      margin: 0 18px;
+      color: #cbd5f5;
+      margin: 0 14px;
       text-decoration: none;
       font-weight: 500;
-      font-size: 15px;
     }
 
-    nav a:hover {
-      color: #ffffff;
-    }
+    nav a:hover { color: white; }
 
     section {
       max-width: 1100px;
-      margin: 60px auto;
+      margin: 45px auto;
       padding: 0 20px;
     }
 
     .card {
       background: white;
+      padding: 36px;
       border-radius: 16px;
-      padding: 32px;
-      margin-bottom: 30px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.08);
     }
 
     h2 {
-      font-size: 26px;
-      margin-bottom: 18px;
+      font-size: 30px;
+      margin-bottom: 16px;
       color: #0f172a;
     }
 
-    h3 {
-      margin-bottom: 6px;
-      color: #1e293b;
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 22px;
     }
 
-    .timeline {
-      border-left: 3px solid #6366f1;
-      padding-left: 20px;
-    }
-
-    .timeline-item {
-      margin-bottom: 20px;
-    }
-
-    .timeline-item span {
-      font-size: 14px;
-      color: #6366f1;
-      font-weight: 500;
+    .project {
+      background: #f8fafc;
+      padding: 22px;
+      border-radius: 14px;
+      border-left: 5px solid #6366f1;
     }
 
     .skills span {
@@ -107,47 +82,30 @@
       color: #3730a3;
       padding: 10px 16px;
       border-radius: 999px;
-      margin: 8px 8px 0 0;
-      font-size: 14px;
-      font-weight: 500;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 10px 18px;
-      border-radius: 10px;
-      background: #4f46e5;
-      color: white;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .btn:hover {
-      background: #4338ca;
+      margin: 8px;
+      font-size: 15px;
     }
 
     footer {
-      background: #0f172a;
+      background: #020617;
       color: #cbd5f5;
       text-align: center;
-      padding: 35px;
+      padding: 28px;
       margin-top: 60px;
-      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>Ammara Fiayyaz</h1>
-  <p>Software Engineering Student | Leaning Website & Mobile App Development</p>
+  <p>Software Engineering Student | Web & Mobile App Developer</p>
 </header>
 
 <nav>
   <a href="#about">About</a>
   <a href="#education">Education</a>
-  <a href="#experience">Experience</a>
   <a href="#projects">Projects</a>
   <a href="#skills">Skills</a>
   <a href="#contact">Contact</a>
@@ -157,54 +115,24 @@
   <div class="card">
     <h2>About Me</h2>
     <p>
-      I am a motivated and detail-oriented Software Engineering student currently pursuing my Bachelor's degree.
-      I have strong interest in front-end development, mobile application development, and software architecture.
-      I enjoy transforming ideas into functional applications and continuously learning new technologies.
+      I am a motivated Software Engineering student with strong interest in web development,
+      mobile application development, and modern software architectures.
+      I enjoy building clean user interfaces and practical software solutions.
     </p>
-    <p>
-      During my academic journey, I have worked on multiple semester projects involving web development,
-      mobile applications, artificial intelligence, and desktop-based solutions.
-      I also completed a web development internship where I gained real-world experience in building
-      responsive and interactive user interfaces.
-    </p>
-    <p>
-      My goal is to grow as a professional software engineer by working on impactful projects,
-      improving problem-solving skills, and contributing to innovative software solutions.
+    <p style="margin-top:14px;">
+      I have completed multiple semester projects using ASP .NET MVC, React, Android, and Java.
+      I also gained hands-on experience during my internship at Forward Sports,
+      where I worked on responsive and interactive web interfaces.
     </p>
   </div>
 </section>
-
 
 <section id="education">
   <div class="card">
     <h2>Education</h2>
-    <div class="timeline">
-      <div class="timeline-item">
-        <h3>BS Software Engineering</h3>
-        <span>University of Sialkot (2022 – Present)</span>
-      </div>
-      <div class="timeline-item">
-        <h3>Intermediate (FSc Pre-Engineering)</h3>
-        <span>Punjab Group of Colleges (2020 – 2022)</span>
-      </div>
-      <div class="timeline-item">
-        <h3>Matriculation (Science)</h3>
-        <span>Quaid-e-Azam Public School System (2010 – 2020)</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="card">
-    <h2>Work Experience</h2>
-    <h3>Forward Sports — Web Development Intern</h3>
-    <span>July 2024 – September 2024</span>
-    <ul style="margin-top:10px; padding-left:20px;">
-      <li>Developed responsive web pages using HTML, CSS, JavaScript, and Bootstrap.</li>
-      <li>Designed front-end layouts and forms for internal tools.</li>
-      <li>Collaborated with team members on real-world internship projects.</li>
-    </ul>
+    <p><strong>BS Software Engineering</strong> — University of Sialkot (2022–Present)</p>
+    <p><strong>FSc Pre-Engineering</strong> — Punjab Group of Colleges (2020–2022)</p>
+    <p><strong>Matric (Science)</strong> — Quaid-e-Azam Public School System</p>
   </div>
 </section>
 
@@ -212,71 +140,42 @@
   <div class="card">
     <h2>Academic & Semester Projects</h2>
 
-    <div class="project">
-      <h3>Architecture Vision Website (ASP .NET MVC)</h3>
-      <p>
-        A professional architecture portfolio website developed using ASP .NET MVC architecture.
-        The website showcases different categories of projects including <strong>Residential</strong>,
-        <strong>Commercial</strong>, and <strong>Educational</strong> buildings.
-        It provides project details, images, and architectural concepts in an organized structure.
-      </p>
-    </div>
+    <div class="grid">
+      <div class="project">
+        <h3>Architecture Vision Website</h3>
+        <p>ASP .NET MVC website showcasing residential, commercial, and educational projects.</p>
+      </div>
 
-    <div class="project">
-      <h3>Salah Time Management System (MVC + React)</h3>
-      <p>
-        A web-based system where users can view daily Salah (prayer) times.
-        The admin panel allows administrators to update Salah timings from the backend.
-        The frontend is developed using React, while backend logic follows MVC architecture.
-      </p>
-    </div>
+      <div class="project">
+        <h3>Salah Time Management System</h3>
+        <p>MVC + React system where users view Salah times and admin updates them.</p>
+      </div>
 
-    <div class="project">
-      <h3>Recipe Customizer Application (Java Swing)</h3>
-      <p>
-        A desktop-based application developed using Java Swing that allows users to customize recipes
-        based on ingredients, preferences, and serving size.
-        The project focuses on GUI design and object-oriented programming concepts.
-      </p>
-    </div>
+      <div class="project">
+        <h3>Recipe Customizer</h3>
+        <p>Java Swing desktop application for recipe customization.</p>
+      </div>
 
-    <div class="project">
-      <h3>Student Result Prediction Mobile App (Android)</h3>
-      <p>
-        An Android mobile application that predicts student academic results based on input data.
-        The application is designed to assist students by providing performance insights
-        using predictive logic and data analysis concepts.
-      </p>
-    </div>
-    <h2>Final Year Project (In Progress)</h2>
-    <div class="project">
-      <h3>AI Smart Navigation Stick</h3>
-      <p>
-        An AI-based smart navigation stick designed to assist visually impaired individuals.
-        It uses object detection, ultrasonic sensors, and mobile application integration
-        for obstacle detection and navigation assistance.
-      </p>
-    </div>
+      <div class="project">
+        <h3>Student Result Prediction App</h3>
+        <p>Android application that predicts student academic performance.</p>
+      </div>
 
+      <div class="project">
+        <h3>AI Smart Navigation Stick (FYP)</h3>
+        <p>AI-based smart stick for visually impaired individuals using sensors and object detection.</p>
+      </div>
+    </div>
   </div>
 </section>
 
-
 <section id="skills">
   <div class="card">
-    <h2>Skills</h2>
+    <h2>Technical Skills</h2>
     <div class="skills">
-      <span>Java</span>
-      <span>C++</span>
-      <span>HTML / CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Bootstrap</span>
-      <span>ASP .NET</span>
-      <span>Android</span>
-      <span>Git & GitHub</span>
-      <span>VS Code</span>
-      <span>IntelliJ IDEA</span>
+      <span>Java</span><span>C++</span><span>HTML / CSS</span><span>JavaScript</span>
+      <span>React</span><span>Bootstrap</span><span>ASP .NET</span>
+      <span>Android</span><span>Git & GitHub</span>
     </div>
   </div>
 </section>
@@ -284,26 +183,25 @@
 <section id="contact">
   <div class="card">
     <h2>Contact</h2>
-    <p><strong>Email:</strong> ammarafiayyaz123@gmail.com</p>
+    <p>Email: ammarafiayyaz123@gmail.com</p>
     <p>
-      <strong>LinkedIn:</strong>
+      LinkedIn:
       <a href="https://www.linkedin.com/in/ammara-fiayyaz-1103b2277/" target="_blank">
-        https://www.linkedin.com/in/ammara-fiayyaz/
+        linkedin.com/in/ammara-fiayyaz
       </a>
     </p>
-
     <p>
-      <strong>GitHub:</strong>
+      GitHub:
       <a href="https://github.com/ammara2754" target="_blank">
-        https://github.com/ammara2754
+        github.com/ammara2754
       </a>
+    </p>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Ammara Fiayyaz — Personal Portfolio</p>
+  © 2026 Ammara Fiayyaz — Personal Portfolio
 </footer>
 
 </body>
 </html>
-
